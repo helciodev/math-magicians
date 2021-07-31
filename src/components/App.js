@@ -5,7 +5,7 @@ import Display from './Display';
 function App() {
   return (
     <div>
-      <Display />
+      <Display result="0" />
       <ButtonPanel />
     </div>
   );
