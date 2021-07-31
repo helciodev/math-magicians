@@ -5,33 +5,33 @@ function ButtonPanel() {
   return (
     <div>
       <div>
-        <Button value="AC" />
-        <Button value="+/-" />
-        <Button value="%" />
-        <Button value="÷" />
+        <Button name="AC" />
+        <Button name="+/-" />
+        <Button name="%" />
+        <Button name="÷" />
       </div>
       <div>
-        <Button value="7" />
-        <Button value="8" />
-        <Button value="9" />
-        <Button value="X" />
+        <Button name="7" />
+        <Button name="8" />
+        <Button name="9" />
+        <Button name="X" />
       </div>
       <div>
-        <Button value="4" />
-        <Button value="5" />
-        <Button value="6" />
-        <Button value="-" />
+        <Button name="4" />
+        <Button name="5" />
+        <Button name="6" />
+        <Button name="-" />
       </div>
       <div>
-        <Button value="1" />
-        <Button value="2" />
-        <Button value="3" />
-        <Button value="+" />
+        <Button name="1" />
+        <Button name="2" />
+        <Button name="3" />
+        <Button name="+" />
       </div>
       <div>
-        <Button value="0" />
-        <Button value="." />
-        <Button value="=" />
+        <Button name="0" />
+        <Button name="." />
+        <Button name="=" />
       </div>
     </div>
   );
