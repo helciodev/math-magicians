@@ -16,7 +16,7 @@
 
 ## About
 
-This the first milestone for the math-magicians project
+This the second milestone fro the math-magicians project
 
 
 ## Features
@@ -26,6 +26,7 @@ The features of this milestone are:
 1. Project uses create-react-app
 2. Unnecessary files are deleted.
 3. Project is deployed on Heroku successfully.
+4. Project shows buttons for calculator and respective values.
 
 ## Live Demo
 
