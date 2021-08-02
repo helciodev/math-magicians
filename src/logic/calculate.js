@@ -18,7 +18,7 @@ const calculate = (calcData, buttonName) => {
       total = operate(total, next, operation).toString();
       break;
     case '.':
-      return 0;
+      return 0.0;
     case '+':
       operation = '+';
       total = operate(total, next, operation).toString();
