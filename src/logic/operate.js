@@ -1,0 +1,31 @@
+import Big from 'big.js';
+
+const operate = (numberOne, numberTwo, operation) => {
+  const numOne = Big(numberOne);
+  const numTwo = Big(numberTwo);
+
+  switch (operation) {
+    case '/':
+      if (numOne === 0) {
+        throw new error('can not divide by zero');
+      } else {
+        return numOne / numTwo;
+      }
+    case '-':
+      return numOne - numTwo;
+    case '+':
+      return numOne + numTwo;
+    case '*':
+      return numOne * numTwo;
+    case '%':
+      if (numTwo === 0) {
+        throw new Error('canno\'t get percentage of zero');
+      }
+      return numOne % numTwo;
+
+    default:
+      return null;
+  }
+};
+
+export default operate;
