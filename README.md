@@ -26,7 +26,8 @@ The features of this milestone are:
 1. Project uses create-react-app
 2. Unnecessary files are deleted.
 3. Project is deployed on Heroku successfully.
-4. Project shows buttons for calculator and respective values.
+4. Project shows buttons for the calculator and respective values.
+5. Project includes a logic folder with calculate and operate default functions
 
 ## Live Demo
 
