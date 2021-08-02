@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 import operate from './operate';
-/* eslint-enable no-unused-vars */
 
 const calculate = (calcData, buttonName) => {
   let { next, total, operation } = calcData;
+  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   switch (buttonName) {
     case '+/-':
@@ -16,54 +15,31 @@ const calculate = (calcData, buttonName) => {
       break;
     case '%':
       operation = '%';
+      total = operate(total, next, operation).toString();
       break;
     case '.':
-      operation = '.';
-      break;
+      return 0;
     case '+':
       operation = '+';
+      total = operate(total, next, operation).toString();
       break;
     case '-':
       operation = '-';
+      total = operate(total, next, operation).toString();
       break;
     case '/':
       operation = '/';
+      total = operate(total, next, operation).toString();
       break;
     case '*':
       operation = '*';
+      total = operate(total, next, operation).toString();
       break;
     case '=':
       operation = '=';
       break;
-    case '1':
-      next = 1;
-      break;
-    case '2':
-      next = 2;
-      break;
-    case '3':
-      next = 3;
-      break;
-    case '4':
-      next = 4;
-      break;
-    case '5':
-      next = 5;
-      break;
-    case '6':
-      next = 6;
-      break;
-    case '7':
-      next = 7;
-      break;
-    case '8':
-      next = 8;
-      break;
-    case '9':
-      next = 9;
-      break;
-    case '0':
-      next = 0;
+    case numbers.includes(buttonName):
+      next = parseInt(numbers[buttonName], 10);
       break;
     default:
       operation = null;
