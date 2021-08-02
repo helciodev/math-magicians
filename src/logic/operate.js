@@ -7,7 +7,7 @@ const operate = (numberOne, numberTwo, operation) => {
   switch (operation) {
     case '/':
       if (numOne === 0) {
-        throw new error('can not divide by zero');
+        throw new Error('can not divide by zero');
       } else {
         return numOne / numTwo;
       }
@@ -19,7 +19,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return numOne * numTwo;
     case '%':
       if (numTwo === 0) {
-        throw new Error('canno\'t get percentage of zero');
+        throw new Error('can\'t get percentage of zero');
       }
       return numOne % numTwo;
 
