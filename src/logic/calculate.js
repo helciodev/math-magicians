@@ -1,6 +1,7 @@
 import operate from './operate';
 
 const calculate = (calcData, buttonName) => {
+  console.log('I am in calculate now');
   let { next, total, operation } = calcData;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
@@ -27,7 +28,7 @@ const calculate = (calcData, buttonName) => {
       operation = '-';
       total = operate(total, next, operation).toString();
       break;
-    case '/':
+    case '÷':
       operation = '/';
       total = operate(total, next, operation).toString();
       break;

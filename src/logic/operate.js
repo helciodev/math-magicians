@@ -14,14 +14,14 @@ const operate = (numberOne, numberTwo, operation) => {
     case '-':
       return numOne - numTwo;
     case '+':
-      return numOne + numTwo;
+      return numOne.plus(numTwo);
     case '*':
       return numOne * numTwo;
     case '%':
       if (numTwo === 0) {
         throw new Error('can\'t get percentage of zero');
       }
-      return numOne % numTwo;
+      return (numOne * 100) / numTwo;
 
     default:
       return null;
