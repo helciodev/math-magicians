@@ -1,16 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display({ result }) {
+function Display({ result, next, operation }) {
   return (
     <h1>
-      { result || '0'}
+      { result || '0' }
+      {' '}
+      { operation }
+      {' '}
+      { next }
     </h1>
   );
 }
 
+Display.defaultProps = {
+  result: '0',
+  next: '',
+  operation: '',
+};
+
 Display.propTypes = {
-  result: PropTypes.string.isRequired,
+  result: PropTypes.string,
+  operation: PropTypes.string,
+  next: PropTypes.string,
 };
 
 export default Display;

@@ -6,33 +6,33 @@ function ButtonPanel({ clickHandler }) {
   return (
     <div>
       <div>
-        <Button onClick={clickHandler} name="AC" />
-        <Button onClick={clickHandler} name="+/-" />
-        <Button onClick={clickHandler} name="%" />
-        <Button onClick={clickHandler} name="÷" />
+        <Button btnClick={clickHandler} name="AC" />
+        <Button btnClick={clickHandler} name="+/-" />
+        <Button btnClick={clickHandler} name="%" />
+        <Button btnClick={clickHandler} name="÷" />
       </div>
       <div>
-        <Button onClick={clickHandler} name="7" />
-        <Button onClick={clickHandler} name="8" />
-        <Button onClick={clickHandler} name="9" />
-        <Button onClick={clickHandler} name="X" />
+        <Button btnClick={clickHandler} name="7" />
+        <Button btnClick={clickHandler} name="8" />
+        <Button btnClick={clickHandler} name="9" />
+        <Button btnClick={clickHandler} name="X" />
       </div>
       <div>
-        <Button onClick={clickHandler} name="4" />
-        <Button onClick={clickHandler} name="5" />
-        <Button onClick={clickHandler} name="6" />
-        <Button onClick={clickHandler} name="-" />
+        <Button btnClick={clickHandler} name="4" />
+        <Button btnClick={clickHandler} name="5" />
+        <Button btnClick={clickHandler} name="6" />
+        <Button btnClick={clickHandler} name="-" />
       </div>
       <div>
-        <Button onClick={clickHandler} name="1" />
-        <Button onClick={clickHandler} name="2" />
-        <Button onClick={clickHandler} name="3" />
-        <Button onClick={clickHandler} name="+" />
+        <Button btnClick={clickHandler} name="1" />
+        <Button btnClick={clickHandler} name="2" />
+        <Button btnClick={clickHandler} name="3" />
+        <Button btnClick={clickHandler} name="+" />
       </div>
       <div>
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
+        <Button btnClick={clickHandler} name="0" />
+        <Button btnClick={clickHandler} name="." />
+        <Button btnClick={clickHandler} name="=" />
       </div>
     </div>
   );

@@ -3,52 +3,70 @@ import operate from './operate';
 const calculate = (calcData, buttonName) => {
   console.log('I am in calculate now');
   let { next, total, operation } = calcData;
-  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
   switch (buttonName) {
     case '+/-':
-      total *= -1;
-      next *= -1;
+      if (next) {
+        next *= -1;
+      } else if (total) {
+        total *= -1;
+      }
       break;
     case 'AC':
-      total = null;
-      next = null;
+      total = '';
+      next = '';
+      operation = '';
       break;
-    case '%':
-      operation = '%';
-      total = operate(total, next, operation).toString();
-      break;
+    // case '%':
+    //   operation = '%';
+    //   if (total && next) {
+    //     total = operate(total, next, operation).toString();
+    //   }
+    //   break;
     case '.':
-      return 0.0;
+      if (!total.includes('.')) {
+        total += '.';
+      } else if (!next.includes('.')) {
+        next += '.';
+      }
+      break;
     case '+':
       operation = '+';
-      total = operate(total, next, operation).toString();
-      break;
-    case '-':
-      operation = '-';
-      total = operate(total, next, operation).toString();
-      break;
-    case '÷':
-      operation = '/';
-      total = operate(total, next, operation).toString();
-      break;
-    case '*':
-      operation = '*';
-      total = operate(total, next, operation).toString();
       break;
     case '=':
-      operation = '=';
+      total = operate(parseFloat(total), parseFloat(next), operation).toString();
+      next = '';
+      operation = '';
+      console.log(total);
       break;
-    case numbers.includes(buttonName):
-      next = parseInt(numbers[buttonName], 10);
+    // case '-':
+    //   operation = '-';
+    //   total = operate(total, next, operation).toString();
+    //   break;
+    // case '÷':
+    //   operation = '÷';
+    //   total = operate(total, next, operation).toString();
+    //   break;
+    // case '*':
+    //   operation = '*';
+    //   total = operate(total, next, operation).toString();
+    //   break;
+    // case '=':
+    // operation = '=';
+    // break;
+    case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
+      if (!operation) {
+        total += buttonName;
+      } else {
+        next += buttonName;
+      }
       break;
     default:
-      operation = null;
-      next = null;
-      total = null;
+      operation = '';
+      next = '';
+      total = '';
       break;
   }
-
+  console.log(`${parseInt(total, 10)}${operation}${parseInt(next, 10)}`);
   return { total, next, operation };
 };
 

@@ -5,18 +5,18 @@ const operate = (numberOne, numberTwo, operation) => {
   const numTwo = new Big(numberTwo);
 
   switch (operation) {
-    case '/':
+    case '÷':
       if (numOne === 0) {
         throw new Error('can not divide by zero');
       } else {
-        return numOne / numTwo;
+        return numOne.div(numTwo);
       }
     case '-':
-      return numOne - numTwo;
+      return numOne.minus(numTwo);
     case '+':
       return numOne.plus(numTwo);
-    case '*':
-      return numOne * numTwo;
+    case 'X':
+      return numOne.times(numTwo);
     case '%':
       if (numTwo === 0) {
         throw new Error('can\'t get percentage of zero');

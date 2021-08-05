@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ name, onClick }) {
+function Button({ name, btnClick }) {
   return (
-    <button onClick={() => onClick(name)} type="button">
+    <button onClick={() => btnClick(name)} type="button">
       {name}
     </button>
   );
@@ -11,7 +11,7 @@ function Button({ name, onClick }) {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  btnClick: PropTypes.func.isRequired,
 };
 
 export default Button;
