@@ -21,7 +21,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (numTwo === 0) {
         throw new Error('can\'t get percentage of zero');
       }
-      return (numOne * 100) / numTwo;
+      return (numOne * numTwo) / 100;
 
     default:
       return null;
