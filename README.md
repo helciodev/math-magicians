@@ -16,7 +16,7 @@
 
 ## About
 
-This the second milestone fro the math-magicians project
+This the fifth milestone fro the math-magicians project
 
 
 ## Features
@@ -28,6 +28,7 @@ The features of this milestone are:
 3. Project is deployed on Heroku successfully.
 4. Project shows buttons for the calculator and respective values.
 5. Project includes a logic folder with calculate and operate default functions
+6. Project integrates logic with components
 
 ## Live Demo
 
