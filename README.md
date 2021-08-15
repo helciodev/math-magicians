@@ -1,4 +1,4 @@
-# Weather-app
+# Math Magicians
 
 ## Table of contents
 
