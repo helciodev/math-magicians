@@ -1,7 +1,7 @@
 import operate from './operate';
 
 const calculate = (calcData, buttonName) => {
-  let { next, total, operation } = calcData;
+  let [total, operation, next] = calcData;
   switch (buttonName) {
     case '+/-':
       if (next) {
@@ -46,7 +46,8 @@ const calculate = (calcData, buttonName) => {
       total = '';
       break;
   }
-  return { total, next, operation };
+  console.log(total, operation, next);
+  return [total, operation, next];
 };
 
 export default calculate;

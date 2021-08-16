@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Display({ result, next, operation }) {
   return (
     <h1>
-      { result || '0' }
+      { result || '0'}
       {' '}
       { operation }
       {' '}
