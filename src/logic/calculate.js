@@ -46,7 +46,6 @@ const calculate = (calcData, buttonName) => {
       total = '';
       break;
   }
-  console.log(total, operation, next);
   return [total, operation, next];
 };
 
