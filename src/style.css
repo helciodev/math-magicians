@@ -5,24 +5,54 @@ body {
   color: #fff;
   background-color: #B6B7BC;
   text-align: right;
-  padding-right: 5px;
+  padding-right: 12px;
+  height: 100px;
+  font-weight: bold;
+  margin-bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
 }
 
 .calculator-container {
   width: 700px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .buttons-container {
   width: 100%;
   display:flex;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.all-buttons {
+  height: 100px;
+  text-align: center;
+  color: #222;
+  border: 1px solid #D1D1D1;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .buttons {
-width: 33.33%;
+width: 25%;
+}
+
+.orange {
+  background-color: #F5913E;
+}
+
+.orange:hover {
+background-color: #da7828;;
+}
+
+.not-orange:hover {
+background-color: #d1cece;
 }
 
 .button-zero {
-width: 66.66%
+  width: 50%;
 }

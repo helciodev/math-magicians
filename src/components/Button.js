@@ -1,9 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ name, btnClick }) {
+function Button({
+  name, btnClick, color, wide,
+}) {
+  const notOrange = color ? 'not-orange' : '';
+  const isOrange = color ? '' : 'orange';
+  const isWide = !wide ? 'buttons all-buttons' : 'button-zero all-buttons';
+
   return (
-    <button className={name !== '0' ? 'buttons' : 'button-zero'} onClick={() => btnClick(name)} type="button">
+    <button
+      className={[isOrange, isWide, notOrange].join(' ')}
+      onClick={() => btnClick(name)}
+      type="button"
+    >
       {name}
     </button>
   );
@@ -12,6 +22,8 @@ function Button({ name, btnClick }) {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   btnClick: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
+  wide: PropTypes.string.isRequired,
 };
 
 export default Button;
