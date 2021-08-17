@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Button({ name, btnClick }) {
   return (
-    <button onClick={() => btnClick(name)} type="button">
+    <button className={name !== '0' ? 'buttons' : 'button-zero'} onClick={() => btnClick(name)} type="button">
       {name}
     </button>
   );

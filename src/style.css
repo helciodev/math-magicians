@@ -1,4 +1,28 @@
-h1 {
-  color: rebeccapurple;
+body {
   font-family: Arial, Helvetica, sans-serif;
+}
+.display {
+  color: #fff;
+  background-color: #B6B7BC;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.calculator-container {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.buttons-container {
+  width: 100%;
+  display:flex;
+}
+
+.buttons {
+width: 33.33%;
+}
+
+.button-zero {
+width: 66.66%
 }

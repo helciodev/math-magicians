@@ -19,8 +19,10 @@ function App() {
 
   return (
     <>
-      <Display result={total} next={next} operation={operation} />
-      <ButtonPanel clickHandler={handleClick} />
+      <div className="calculator-container">
+        <Display result={total} next={next} operation={operation} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </>
   );
 }

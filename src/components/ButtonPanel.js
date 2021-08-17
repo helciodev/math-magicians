@@ -5,31 +5,31 @@ import Button from './Button';
 function ButtonPanel({ clickHandler }) {
   return (
     <div>
-      <div>
+      <div className="buttons-container">
         <Button btnClick={clickHandler} name="AC" />
         <Button btnClick={clickHandler} name="+/-" />
         <Button btnClick={clickHandler} name="%" />
         <Button btnClick={clickHandler} name="÷" />
       </div>
-      <div>
+      <div className="buttons-container">
         <Button btnClick={clickHandler} name="7" />
         <Button btnClick={clickHandler} name="8" />
         <Button btnClick={clickHandler} name="9" />
         <Button btnClick={clickHandler} name="X" />
       </div>
-      <div>
+      <div className="buttons-container">
         <Button btnClick={clickHandler} name="4" />
         <Button btnClick={clickHandler} name="5" />
         <Button btnClick={clickHandler} name="6" />
         <Button btnClick={clickHandler} name="-" />
       </div>
-      <div>
+      <div className="buttons-container">
         <Button btnClick={clickHandler} name="1" />
         <Button btnClick={clickHandler} name="2" />
         <Button btnClick={clickHandler} name="3" />
         <Button btnClick={clickHandler} name="+" />
       </div>
-      <div>
+      <div className="buttons-container">
         <Button btnClick={clickHandler} name="0" />
         <Button btnClick={clickHandler} name="." />
         <Button btnClick={clickHandler} name="=" />
