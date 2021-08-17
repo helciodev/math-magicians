@@ -1,6 +1,29 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.quote {
+  font-size: 34px;
+  font-style: italic;
+}
+
+.greetings, .logo {
+  font-size: 24px;
+  font-weight:bold;
+}
+
+.calculator {
+  width: 700px;
+}
+nav, .calculator-wrap {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between
+}
+
+.links{
+  margin-right: 7px;
+}
+
 .display {
   color: #fff;
   background-color: #B6B7BC;
@@ -16,7 +39,7 @@ body {
 }
 
 .calculator-container {
-  width: 700px;
+  padding: 0 1rem;
 }
 
 .buttons-container {

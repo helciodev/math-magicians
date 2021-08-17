@@ -4,9 +4,18 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <>
-      <Link to="/">Home</Link>
-      <Link to="/calculator">Calcultor</Link>
-      <Link to="/quote">Quote</Link>
+      <nav>
+        <div className="logo">
+          Math-Magicians
+        </div>
+        <div>
+          <Link className="links" to="/">Home</Link>
+          {' | '}
+          <Link className="links" to="/calculator">Calcultor</Link>
+          {' | '}
+          <Link className="links" to="/quote">Quote</Link>
+        </div>
+      </nav>
     </>
   );
 }

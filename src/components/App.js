@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <main className="calculator-container">
         <Switch>
-          <Route path="/calculator" component={Home} />
+          <Route path="/" component={Home} exact />
           <Route path="/calculator" component={Calculator} />
-          <Route path="/calculator" component={Quote} />
+          <Route path="/quote" component={Quote} />
         </Switch>
 
       </main>

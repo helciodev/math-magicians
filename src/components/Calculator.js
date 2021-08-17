@@ -17,9 +17,14 @@ function Calculator() {
     setNext(newNext);
   }
   return (
-    <div className="calculator">
-      <Display result={total} next={next} operation={operation} />
-      <ButtonPanel clickHandler={handleClick} />
+    <div className="calculator-wrap">
+      <div>
+        <h2>let&apos;s do some math</h2>
+      </div>
+      <div className="calculator">
+        <Display result={total} next={next} operation={operation} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </div>
   );
 }
