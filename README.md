@@ -3,11 +3,12 @@
 ## Table of contents
 
 - [About](#about)
-- [Features](#features)
+- [Features](#how-to-use)
 - [Live Demo](#live-demo)
 - [Built with](#built-with)
 - [Getting started](#getting-started)
   - [Installation instructions](#installation-instructions)
+  - [Testing](#testing)
 - [Author](#author)
 - [Show your support](#show-your-support)
 - [License](#-license)
@@ -21,14 +22,13 @@ This the fifth milestone fro the math-magicians project
 
 ## Features
 
-The features of this milestone are:
+How to perform operations:
 
-1. Project uses create-react-app
-2. Unnecessary files are deleted.
-3. Project is deployed on Heroku successfully.
-4. Project shows buttons for the calculator and respective values.
-5. Project includes a logic folder with calculate and operate default functions
-6. Project integrates logic with components
+To perform the operations:
+- User should select the first value from the number button (0 - 9)
+- User should select the operation buttons (-, +, x, ÷, %)
+- User should select the next value for calculation
+- Finally, the user can select the '=' button to perform the calculations.
 
 ## Live Demo
 
@@ -63,6 +63,10 @@ Follow along the steps below to get a copy at your local machine.
 - Install the npm package with `npm install`
 - Start the server with `npm start`
 - The site should automatically open in your browser at http://localhost:3000/ if it didn't then open your browser with that link.
+
+### testing
+
+- Run npm test to run tests
 
 ## Author
 
