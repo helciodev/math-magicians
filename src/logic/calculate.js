@@ -16,10 +16,12 @@ const calculate = (calcData, buttonName) => {
       operation = '';
       break;
     case '.':
-      if (!total.includes('.')) {
+      if (operation && next) {
+        if (!next.includes('.')) {
+          next += '.';
+        }
+      } else if (!total.includes('.')) {
         total += '.';
-      } else if (!next.includes('.')) {
-        next += '.';
       }
       break;
     case '=':
