@@ -1,41 +1,44 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .quote {
   font-size: 34px;
   font-style: italic;
 }
 
-.greetings, .logo {
+.greetings,
+.logo {
   font-size: 24px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .calculator {
   width: 700px;
 }
-nav, .calculator-wrap {
+
+nav,
+.calculator-wrap {
   display: flex;
   padding: 1rem 2rem;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.links{
+.links {
   margin-right: 7px;
 }
 
 .display {
   color: #fff;
-  background-color: #B6B7BC;
+  background-color: #b6b7bc;
   text-align: right;
   padding-right: 12px;
   height: 100px;
   font-weight: bold;
-  margin-bottom:0;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .calculator-container {
@@ -44,7 +47,7 @@ nav, .calculator-wrap {
 
 .buttons-container {
   width: 100%;
-  display:flex;
+  display: flex;
   font-weight: bold;
   font-size: 24px;
 }
@@ -53,26 +56,26 @@ nav, .calculator-wrap {
   height: 100px;
   text-align: center;
   color: #222;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #d1d1d1;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .buttons {
-width: 25%;
+  width: 25%;
 }
 
 .orange {
-  background-color: #F5913E;
+  background-color: #f5913e;
 }
 
 .orange:hover {
-background-color: #da7828;;
+  background-color: #da7828;
 }
 
 .not-orange:hover {
-background-color: #d1cece;
+  background-color: #d1cece;
 }
 
 .button-zero {

@@ -22,8 +22,13 @@ function Button({
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   btnClick: PropTypes.func.isRequired,
-  color: PropTypes.string.isRequired,
-  wide: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  wide: PropTypes.string,
+};
+
+Button.defaultProps = {
+  wide: '',
+  color: '',
 };
 
 export default Button;
