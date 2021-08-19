@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="calculator-wrap"
+>
+  <div>
+    <h2>
+      let's do some math
+    </h2>
+  </div>
+  <div
+    className="calculator"
+  >
+    <h1
+      className="display"
+    >
+      0
+       
+      
+       
+      
+    </h1>
+    <div>
+      <div
+        className="buttons-container"
+      >
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="orange buttons all-buttons "
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div
+        className="buttons-container"
+      >
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="orange buttons all-buttons "
+          onClick={[Function]}
+          type="button"
+        >
+          X
+        </button>
+      </div>
+      <div
+        className="buttons-container"
+      >
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="orange buttons all-buttons "
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="buttons-container"
+      >
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="orange buttons all-buttons "
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="buttons-container"
+      >
+        <button
+          className=" button-zero all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className=" buttons all-buttons not-orange"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="orange buttons all-buttons "
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
